@@ -1,0 +1,36 @@
+.line{
+    display: flex;
+    width: 100vb;
+    color: white;
+}
+.result_block{
+    color: aqua;
+    margin-left: 20px;
+}
+body{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+}
+.main_block{
+    width: 50%;
+    margin: auto;
+
+}
+
+.btn{
+    margin: 10px;
+    border: 1px solid;
+    border-color: black;
+    border-width: 10px;
+}
+
+.btn_y{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 0, 0.486);
+    color: white;
+    margin: 10px;
+    text-align: center;
+}

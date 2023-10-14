@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>hi</title>
+        <script>
+            function stockBuyAndSell(n, prices) {
+                
+              document.getElementById("demo").innerHTML = "Paragraph changed.";
+              function merge(arr1, arr2, n, m)
+                {
+                    let arr3 = [];
+                    let count = 0;
+                    debugger;
+                    arr3 = arr1.concat(arr2);
+                    arr1.length = 0;
+                    arr2.length = 0;
+                    arr3.sort(function(a, b){return a - b});
+                    for(let i = 0; i<n+m; i++){
+                        arr1[i] = arr3.splice(0,1)[0];
+                    }
+                    for(let i = 0; i<m; i++){
+                        arr2[i] = arr3.splice(0,1)[0];
+                    }
+                }
+                arr11 = [10, 12];
+                arr12 = [5, 18, 20];
+                merge(arr11, arr12, 4, 5);
+                console.log(arr11,arr12);
+        }
+        </script>
+    </head>
+    <body>
+        <h1 id="demo">hii</h1>
+        <button type="button" onclick="stockBuyAndSell(7, [100, 180, 260, 310, 40, 535, 695])">Try it</button>
+    </body>
+</html>
